@@ -135,24 +135,24 @@ var portfolio_data = [
 		id: 'earth-parallex',
 		images: [
 			{
-				src: './images/EarthParallex/01.png',
-				thumb: './images/EarthParallex/01.png',
-				subHtml: '<h4>First Page</h4><p>Earth Parallex</p>',
+				src: './images/ex/1.png',
+				thumb: './images/ex/1.png',
+				subHtml: '<h4>First Page</h4><p>Extrue Website</p>',
 			},
 			{
-				src: './images/EarthParallex/02.png',
-				thumb: './images/EarthParallex/02.png',
-				subHtml: '<h4>Ocean Flows</h4><p> Earth parallex </p>',
+				src: './images/ex/2.1.png',
+				thumb: './images/ex/2.1.png',
+				subHtml: '<h4>Introduction</h4><p> Extrue Website </p>',
 			},
 			{
-				src: './images/EarthParallex/03.png',
-				thumb: './images/EarthParallex/03.png',
-				subHtml: '<h4>Sunrise animation</h4><p>Earth Parallex</p>',
+				src: './images/ex/3.1.png',
+				thumb: './images/ex/3.1.png',
+				subHtml: '<h4>About Faculty</h4><p>Extrue Website</p>',
 			},
 			{
-				src: './images/EarthParallex/04.png',
-				thumb: './images/EarthParallex/04.png',
-				subHtml: '<h4>Mountain animation</h4><p>Earth Parallex</p>',
+				src: './images/ex/4.1.png',
+				thumb: './images/ex/4.1.png',
+				subHtml: '<h4>About Departments</h4><p>Extrue Website</p>',
 			},
 		],
 	},
@@ -329,28 +329,28 @@ var portfolio_data = [
 				src: './images/ai/Esp32.jpg',
 				thumb: './images/ai/Esp32.jpg',
 				subHtml:
-					'<h4>Landing Page</h4><p>ThierryChopain Developer Awwwards Portfolio</p>',
+					'<h4>Ai Camera</h4><p> RUSL Ai Cam</p>',
 			},
 			{
 				src: './images/ai/Server.png',
 				thumb: './images/ai/Server.png',
 				subHtml:
-					'<h4>Branding Video Section</h4><p>ThierryChopain Developer Awwwards Portfolio</p>',
+					'<h4>Python Based Server</h4><p>RUSL Ai Cam</p>',
 			},
 			{
 				src: './images/ai/camfeed.png',
 				thumb: './images/ai/camfeed.png',
-				subHtml: '<h4></h4><p>ThierryChopain Developer Awwwards Portfolio</p>',
+				subHtml: '<h4></h4><p>Web</p>',
 			},
 			{
 				src: './images/ai/screenshots.png',
 				thumb: './images/ai/screenshots.png',
-				subHtml: '<h4></h4><p>ThierryChopain Developer Awwwards Portfolio</p>',
+				subHtml: '<h4></h4><p>Mobile App ui</p>',
 			},
 			{
 				src: './images/ai/connect_cam.jpg',
 				thumb: './images/ai/connect_cam.jpg',
-				subHtml: '<h4></h4><p>ThierryChopain Developer Awwwards Portfolio</p>',
+				subHtml: '<h4></h4><p>Connect Camera</p>',
 			},
 			
 		],
