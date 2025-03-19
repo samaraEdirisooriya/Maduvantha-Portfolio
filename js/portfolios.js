@@ -105,28 +105,28 @@ var portfolio_data = [
 		id: 'lagunitas',
 		images: [
 			{
-				src: './images/Lagunitas/01.png',
-				thumb: './images/Lagunitas/01.png',
+				src: './images/ai/Esp32.jpg',
+				thumb: './images/ai/Esp32.jpg',
 				subHtml: '<h4>Dashboard Page</h4><p>Chungi Yoo Landing Page</p>',
 			},
 			{
-				src: './images/Lagunitas/02.png',
-				thumb: './images/Lagunitas/02.png',
+				src: './images/ai/Esp32.jpg',
+				thumb: './images/ai/Esp32.jpg',
 				subHtml: '<h4>Search Feature</h4><p>Chungi Yoo Web </p>',
 			},
 			{
-				src: './images/Lagunitas/03.png',
-				thumb: './images/Lagunitas/03.png',
+				src: './images/ai/Esp32.jpg',
+				thumb: './images/ai/Esp32.jpg',
 				subHtml: '<h4>Transaction Page</h4><p>Chungi Yoo Web</p>',
 			},
 			{
-				src: './images/Lagunitas/04.png',
-				thumb: './images/Lagunitas/04.png',
+				src: './images/ai/Esp32.jpg',
+				thumb: './images/ai/Esp32.jpg',
 				subHtml: '<h4>Profile Page</h4><p>Chungi Yoo Web</p>',
 			},
 			{
-				src: './images/Lagunitas/05.png',
-				thumb: './images/Lagunitas/05.png',
+				src: './images/ai/Esp32.jpg',
+				thumb: './images/ai/Esp32.jpg',
 				subHtml: '<h4>Wallet Page with Dark Mode</h4><p>Chungi Yoo Web</p>',
 			},
 		],
@@ -326,52 +326,33 @@ var portfolio_data = [
 		id: 'thierrychopain-portfolio-project',
 		images: [
 			{
-				src: './images/ThierrySlider/01.png',
-				thumb: './images/ThierrySlider/01.png',
+				src: './images/ai/Esp32.jpg',
+				thumb: './images/ai/Esp32.jpg',
 				subHtml:
 					'<h4>Landing Page</h4><p>ThierryChopain Developer Awwwards Portfolio</p>',
 			},
 			{
-				src: './images/ThierrySlider/02.png',
-				thumb: './images/ThierrySlider/02.png',
+				src: './images/ai/Server.png',
+				thumb: './images/ai/Server.png',
 				subHtml:
 					'<h4>Branding Video Section</h4><p>ThierryChopain Developer Awwwards Portfolio</p>',
 			},
 			{
-				src: './images/ThierrySlider/03.png',
-				thumb: './images/ThierrySlider/03.png',
+				src: './images/ai/camfeed.png',
+				thumb: './images/ai/camfeed.png',
 				subHtml: '<h4></h4><p>ThierryChopain Developer Awwwards Portfolio</p>',
 			},
 			{
-				src: './images/ThierrySlider/04.png',
-				thumb: './images/ThierrySlider/04.png',
+				src: './images/ai/screenshots.png',
+				thumb: './images/ai/screenshots.png',
 				subHtml: '<h4></h4><p>ThierryChopain Developer Awwwards Portfolio</p>',
 			},
 			{
-				src: './images/ThierrySlider/05.png',
-				thumb: './images/ThierrySlider/05.png',
+				src: './images/ai/connect_cam.jpg',
+				thumb: './images/ai/connect_cam.jpg',
 				subHtml: '<h4></h4><p>ThierryChopain Developer Awwwards Portfolio</p>',
 			},
-			{
-				src: './images/ThierrySlider/06.png',
-				thumb: './images/ThierrySlider/06.png',
-				subHtml: '<h4></h4><p>ThierryChopain Developer Awwwards Portfolio</p>',
-			},
-			{
-				src: './images/ThierrySlider/07.png',
-				thumb: './images/ThierrySlider/07.png',
-				subHtml: '<h4></h4><p>ThierryChopain Developer Awwwards Portfolio</p>',
-			},
-			{
-				src: './images/ThierrySlider/08.png',
-				thumb: './images/ThierrySlider/08.png',
-				subHtml: '<h4></h4><p>ThierryChopain Developer Awwwards Portfolio</p>',
-			},
-			{
-				src: './images/ThierrySlider/09.png',
-				thumb: './images/ThierrySlider/09.png',
-				subHtml: '<h4></h4><p>ThierryChopain Developer Awwwards Portfolio</p>',
-			},
+			
 		],
 	},
 ];
