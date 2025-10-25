@@ -1,38 +1,139 @@
 <!doctype html>
-<html lang="en" data-theme="dark"> <!-- default DARK -->
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>Maduvantha • Portfolio</title>
 
-  <meta name="description" content="Mobile-first portfolio with parallax, dark/light mode, Flutter UI showcase, video skills, and smooth animations." />
+  <title>Maduvantha Edirisooriya • Flutter Mobile App Developer | IoT | Blockchain</title>
+
+  <!-- ====== Basic SEO ====== -->
+  <meta name="description" content="Portfolio of Maduvantha Edirisooriya — Final-year ICT undergraduate, Flutter mobile app developer, IoT builder, and blockchain researcher. Skilled in Flutter, Firebase, ESP32-CAM, YOLO, Node.js, and Hyperledger Fabric." />
+  <meta name="keywords" content="Maduvantha Edirisooriya, Flutter developer Sri Lanka, Flutter mobile app developer, IoT projects ESP32-CAM, blockchain Hyperledger Fabric, Rajarata University, mobile app freelancer Sri Lanka, Flutter internship, Firebase, BLoC, bunny.net streaming app" />
+  <meta name="author" content="Maduvantha Edirisooriya" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://maduvantha.me/" />
+
+  <!-- primary theme color for some browsers -->
   <meta name="theme-color" content="#0b0f17" />
+
+  <!-- ====== Open Graph / Social preview (Facebook, WhatsApp, LinkedIn etc.) ====== -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Maduvantha Edirisooriya • Flutter / IoT / Blockchain Developer" />
+  <meta property="og:description" content="Flutter mobile apps, IoT surveillance with ESP32-CAM + YOLO, and blockchain-backed medical data research. Hire me for high-performance mobile experiences." />
+  <meta property="og:url" content="https://maduvantha.me/" />
+  <meta property="og:image" content="https://maduvantha.me/my.png" />
+  <meta property="og:site_name" content="Maduvantha Portfolio" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- ====== Twitter Card ====== -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Maduvantha Edirisooriya • Flutter / IoT / Blockchain Developer" />
+  <meta name="twitter:description" content="Final-year ICT undergraduate building production-grade Flutter apps, IoT systems, and blockchain integrations." />
+  <meta name="twitter:image" content="https://maduvantha.me/my.png" />
+  <meta name="twitter:creator" content="@your_handle_here" />
+
+  <!-- ====== Contact / Business info (helps Knowledge Graph) ====== -->
+  <meta name="geo.region" content="LK-2" />
+  <meta name="geo.placename" content="Kandy, Sri Lanka" />
+  <meta name="ICBM" content="7.2906, 80.6337" />
+  <meta name="rating" content="General" />
+
+  <!-- ====== Fonts ====== -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..900&display=swap" rel="stylesheet">
 
+  <!-- ====== Structured Data / JSON-LD ======
+       This helps Google understand: "Who are you?" and "What is this site?" -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://maduvantha.me/#me",
+        "name": "Maduvantha Edirisooriya",
+        "url": "https://maduvantha.me/",
+        "image": "https://maduvantha.me/my.png",
+        "jobTitle": "Flutter Mobile App Developer",
+        "description": "Final-year ICT undergraduate at Rajarata University of Sri Lanka. I build production-ready Flutter apps, IoT/edge AI systems with ESP32-CAM + YOLO, and blockchain-backed medical record systems using Hyperledger Fabric.",
+        "email": "mailto:samaraedirisooriya123@gmail.com",
+        "telephone": "+94-78-733-6580",
+        "sameAs": [
+          "https://github.com/samaraEdirisooriya",
+          "https://www.youtube.com/channel/UCxxxxxxxx", 
+          "https://www.linkedin.com/in/your-linkedin-here"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Kandy",
+          "addressRegion": "Central Province",
+          "addressCountry": "Sri Lanka"
+        },
+        "knowsAbout": [
+          "Flutter",
+          "Firebase",
+          "BLoC state management",
+          "Node.js and Express APIs",
+          "ESP32-CAM computer vision",
+          "YOLO object detection",
+          "Hyperledger Fabric",
+          "Corda blockchain",
+          "IPFS storage",
+          "bunny.net video streaming"
+        ],
+        "alumniOf": [
+          {
+            "@type": "CollegeOrUniversity",
+            "name": "Rajarata University of Sri Lanka",
+            "sameAs": "https://www.rjt.ac.lk/"
+          }
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://maduvantha.me/#site",
+        "url": "https://maduvantha.me/",
+        "name": "Maduvantha Edirisooriya Portfolio",
+        "description": "Portfolio showcasing Flutter projects, IoT surveillance systems, university scooter rental IoT platform, blockchain-based healthcare record research, and EXTRU 2025 exhibition website.",
+        "publisher": {
+          "@id": "https://maduvantha.me/#me"
+        },
+        "inLanguage": "en",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.google.com/search?q={search_term_string}+site%3Amaduvantha.me",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    ]
+  }
+  </script>
+
   <style>
     :root{
-      --bg:#0b0f17;          /* dark */
+      --bg:#0b0f17;
       --ink:#e9eef7;
       --muted:#9fb0c6;
       --card:#111827; 
       --glass: rgba(17,24,39,.6);
-      --brand:#7c5cff; /* neon violet */
-      --brand2:#19d3ff; /* neon cyan */
+      --brand:#7c5cff;
+      --brand2:#19d3ff;
       --gold:#ffcc4d;
       --ok:#48d597;
       --danger:#ff5d5d;
       --ring: 0 0 0 2px color-mix(in oklab, var(--brand) 40%, transparent);
+      --border: color-mix(in oklab, var(--ink) 18%, transparent);
     }
     [data-theme="light"]{
-      --bg:#f7f9fe;          /* light */
+      --bg:#f7f9fe;
       --ink:#0b0f17;
       --muted:#5b6b83;
       --card:#ffffff;
       --glass: rgba(255,255,255,.65);
       --brand:#5a54ff;
       --brand2:#06b6d4;
+      --border: color-mix(in oklab, var(--ink) 18%, transparent);
     }
 
     *{box-sizing:border-box}
@@ -53,7 +154,7 @@
     header{
       position:sticky; top:0; z-index:30; backdrop-filter: blur(10px);
       background: color-mix(in oklab, var(--glass) 92%, transparent);
-      border-bottom:1px solid color-mix(in oklab, var(--ink) 18%, transparent);
+      border-bottom:1px solid var(--border);
     }
     .nav{display:flex; align-items:center; justify-content:space-between; padding:14px 8px}
     .logo{display:flex; align-items:center; gap:10px; font-weight:800; letter-spacing:.3px}
@@ -63,10 +164,10 @@
     nav a:hover{background:color-mix(in oklab, var(--ink) 10%, transparent)}
     .actions{display:flex; align-items:center; gap:8px}
     .btn, button{font:inherit; cursor:pointer}
-    .btn{padding:10px 14px; border-radius:12px; border:1px solid color-mix(in oklab, var(--ink) 18%, transparent); background:linear-gradient(180deg, color-mix(in oklab, var(--card) 80%, transparent), color-mix(in oklab, var(--card) 92%, transparent)); color:var(--ink)}
+    .btn{padding:10px 14px; border-radius:12px; border:1px solid var(--border); background:linear-gradient(180deg, color-mix(in oklab, var(--card) 80%, transparent), color-mix(in oklab, var(--card) 92%, transparent)); color:var(--ink)}
     .btn.primary{border:none; background:linear-gradient(135deg,var(--brand),var(--brand2)); color:white; box-shadow:0 10px 40px color-mix(in oklab, var(--brand) 35%, transparent)}
 
-    .theme-toggle{display:inline-grid; place-items:center; width:44px; height:40px; border-radius:12px; border:1px solid color-mix(in oklab, var(--ink) 18%, transparent); background: color-mix(in oklab, var(--card) 92%, transparent)}
+    .theme-toggle{display:inline-grid; place-items:center; width:44px; height:40px; border-radius:12px; border:1px solid var(--border); background: color-mix(in oklab, var(--card) 92%, transparent)}
 
     /* ===== Hero ===== */
     .hero{position:relative; overflow:hidden}
@@ -86,16 +187,21 @@
            mix-blend-mode:screen; opacity:.16}
     .orb{width:480px; height:480px; border-radius:50%; filter: blur(60px); background: radial-gradient(closest-side, color-mix(in oklab, var(--brand2) 90%, transparent), transparent 70%); top:-120px; right:-220px; opacity:.45}
 
-    /* ===== Phone Mock ===== */
+    /* ===== Phone Mock in HERO ===== */
     .phone{
       width:min(340px, 90%); height:640px; margin-inline:auto; border-radius:38px; position:relative; overflow:hidden; background: linear-gradient(180deg,#0e1220,#0c1222);
       box-shadow: 0 30px 60px rgba(0,0,0,.35), inset 0 0 0 8px #222a3b; border:1px solid #1f2937;
     }
     .notch{position:absolute; top:8px; left:50%; translate:-50% 0; width:120px; height:18px; background:#0b1222; border-radius:0 0 14px 14px; box-shadow: inset 0 -2px 8px rgba(0,0,0,.4)}
-    .screen{position:absolute; inset:14px; border-radius:28px; overflow:hidden; background:linear-gradient(180deg, #0f152b 0%, #0b0f17 100%)}
+    .screen{
+      position:absolute; inset:14px; border-radius:28px; overflow:hidden;
+      background:linear-gradient(180deg, #0f152b 0%, #0b0f17 100%);
+      display:flex;
+      flex-direction:column;
+    }
     .appbar{display:flex; align-items:center; justify-content:space-between; padding:12px; border-bottom:1px solid #1f2937; background:linear-gradient(180deg,#121a33,#0f152b)}
     .chip{display:inline-flex; align-items:center; gap:6px; padding:6px 10px; border-radius:999px; background:#10182e; font-size:.78rem; border:1px solid #1e2a43}
-    .cards{display:grid; grid-template-columns:1fr; gap:10px; padding:12px}
+    .cards{display:grid; grid-template-columns:1fr; gap:10px; padding:12px; overflow-y:auto}
     .card{background:linear-gradient(180deg,#111a33,#0d1323); border:1px solid #1f2b44; border-radius:16px; padding:12px}
     .thumb{width:100%; aspect-ratio:16/9; border-radius:12px; border:1px solid #243151; overflow:hidden}
     .thumb video, .thumb img{width:100%; height:100%; object-fit:cover; display:block}
@@ -112,24 +218,10 @@
     @media (max-width: 1000px){ .cols-3,.cols-4{grid-template-columns:repeat(2,1fr)} }
     @media (max-width: 640px){ .cols-3,.cols-2,.cols-4{grid-template-columns:1fr} }
 
-    .glass{background: var(--glass); border:1px solid color-mix(in oklab, var(--ink) 18%, transparent); border-radius:20px; padding:18px}
+    .glass{background: var(--glass); border:1px solid var(--border); border-radius:20px; padding:18px}
 
-    .skilltag{display:inline-flex; align-items:center; gap:8px; padding:8px 12px; border-radius:999px; background: color-mix(in oklab, var(--ink) 8%, transparent); border:1px solid color-mix(in oklab, var(--ink) 18%, transparent)}
+    .skilltag{display:inline-flex; align-items:center; gap:8px; padding:8px 12px; border-radius:999px; background: color-mix(in oklab, var(--ink) 8%, transparent); border:1px solid var(--border)}
     .tags{display:flex; flex-wrap:wrap; gap:8px}
-
-    /* Project cards */
-    .project{display:flex; flex-direction:column; gap:10px}
-    .project .meta{display:flex; align-items:center; gap:10px; color:var(--muted); font-size:.9rem}
-    .project .btnrow{display:flex; gap:8px; flex-wrap:wrap}
-
-    /* Video skills */
-    .video-grid{display:grid; gap:18px; grid-template-columns:repeat(3,1fr)}
-    @media (max-width: 980px){ .video-grid{grid-template-columns:repeat(2,1fr)} }
-    @media (max-width: 640px){ .video-grid{grid-template-columns:1fr} }
-    .video-card{border-radius:16px; overflow:hidden; border:1px solid color-mix(in oklab, var(--ink) 18%, transparent); background:linear-gradient(180deg, color-mix(in oklab, var(--card) 92%, transparent), transparent)}
-    .video-card header{padding:12px 14px; display:flex; align-items:center; justify-content:space-between}
-    .video-card .label{font-weight:700}
-    .video-card video, .video-card iframe{width:100%; height:254px; display:block}
 
     /* Timeline */
     .timeline{position:relative; margin-left:10px}
@@ -140,9 +232,6 @@
     /* Reveal animations */
     .reveal{opacity:0; transform: translateY(14px); transition: opacity .8s ease, transform .8s ease}
     .reveal.in{opacity:1; transform: translateY(0)}
-
-    /* Footer */
-    footer{padding:40px 0; border-top:1px solid color-mix(in oklab, var(--ink) 18%, transparent); background: color-mix(in oklab, var(--card) 88%, transparent)}
 
     /* Small helpers */
     .muted{color:var(--muted)}
@@ -155,7 +244,7 @@
     .skills-wrap{display:grid; grid-template-columns:repeat(4,1fr); gap:min(20px,3.6vw)}
     @media (max-width:1000px){ .skills-wrap{grid-template-columns:repeat(2,1fr)} }
     @media (max-width:640px){ .skills-wrap{grid-template-columns:1fr} }
-    .skill-orb{position:relative; overflow:hidden; border-radius:22px; padding:18px; background:linear-gradient(180deg, color-mix(in oklab, var(--card) 94%, transparent), transparent); border:1px solid color-mix(in oklab, var(--ink) 18%, transparent)}
+    .skill-orb{position:relative; overflow:hidden; border-radius:22px; padding:18px; background:linear-gradient(180deg, color-mix(in oklab, var(--card) 94%, transparent), transparent); border:1px solid var(--border)}
     .skill-top{display:flex; align-items:center; justify-content:space-between; gap:10px}
     .skill-ring{--p:75; width:108px; height:108px; border-radius:50%; background:
       conic-gradient(color-mix(in oklab, var(--brand) 85%, white) calc(var(--p)*1%), color-mix(in oklab, var(--ink) 14%, transparent) 0),
@@ -169,44 +258,84 @@
     .skill-orb:hover .skill-ring{animation:spin 6s linear infinite}
     @keyframes spin{to{transform:rotate(1turn)}}
 
-    /* ==== Project Phone Cards & Lightbox ==== */
+    /* ==== PROJECT GRID ==== */
     .p-grid{display:grid; gap:min(24px,4vw); grid-template-columns:repeat(3,1fr)}
     @media (max-width:1000px){ .p-grid{grid-template-columns:repeat(2,1fr)} }
     @media (max-width:640px){ .p-grid{grid-template-columns:1fr} }
-    .p-card{position:relative; cursor:pointer}
-    .p-card .phone{width:100%; height:520px; box-shadow:0 20px 50px rgba(0,0,0,.35), inset 0 0 0 6px #222a3b}
-    .p-card .screen{inset:12px}
-    .p-card .thumb img{display:block; width:100%; height:100%; object-fit:cover}
-    .p-meta{display:flex; align-items:center; justify-content:space-between; margin-top:10px}
+
+    .p-card{
+      position:relative;
+      cursor:pointer;
+      background: var(--glass);
+      border:1px solid var(--border);
+      border-radius:20px;
+      padding:16px;
+      box-shadow:0 20px 50px rgba(0,0,0,.4);
+    }
+
+    /* phone shell INSIDE PROJECT GRID */
+    .p-card .phone{
+      width:100%;
+      height:520px;
+      border-radius:32px;
+      position:relative;
+      overflow:hidden;
+      background: linear-gradient(180deg,#0e1220,#0c1222);
+      box-shadow:0 20px 50px rgba(0,0,0,.6), inset 0 0 0 6px #222a3b;
+      border:1px solid #1f2937;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+    .p-card .phone::before{
+      content:"";
+      position:absolute;
+      top:8px; left:50%;
+      translate:-50% 0;
+      width:120px; height:18px;
+      background:#0b1222;
+      border-radius:0 0 14px 14px;
+      box-shadow: inset 0 -2px 8px rgba(0,0,0,.4);
+      z-index:4;
+    }
+    .p-card .screen{
+      position:absolute;
+      inset:12px;
+      border-radius:24px;
+      overflow:hidden;
+      background:#000;
+      display:flex;
+    }
+    .p-card .screen img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      display:block;
+    }
+
+    .p-meta{display:flex; flex-direction:column; gap:4px; margin-top:12px}
     .p-title{font-weight:800}
     .p-chip{font-size:.8rem; opacity:.75}
-
-    .lightbox{position:fixed; inset:0; display:none; place-items:center; background:rgba(0,0,0,.6); backdrop-filter:blur(8px); z-index:60}
-    .lightbox.open{display:grid}
-    .lb-card{width:min(980px,94vw); max-height:92vh; border-radius:18px; background:var(--card); color:var(--ink); border:1px solid color-mix(in oklab, var(--ink) 18%, transparent); overflow:hidden; display:grid; grid-template-rows:auto 1fr auto}
-    .lb-head{display:flex; align-items:center; justify-content:space-between; padding:12px 14px; border-bottom:1px solid color-mix(in oklab, var(--ink) 16%, transparent)}
-    /* MINMAX fix: allow the right column to scroll by not letting grid items overflow */
-    .lb-body{display:grid; grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr); min-height:0}
-    @media (max-width:900px){ .lb-body{grid-template-columns:1fr} }
-    .slider{position:relative; aspect-ratio:9/16; background:#0b0f17}
-    .slide{position:absolute; inset:0; opacity:0; transition:opacity .35s ease}
-    .slide.active{opacity:1}
-    .lb-controls{position:absolute; inset:0; display:flex; align-items:center; justify-content:space-between; padding:0 6px}
-    .lb-btn{width:42px; height:42px; border-radius:50%; border:1px solid color-mix(in oklab, var(--ink) 18%, transparent); background:color-mix(in oklab, var(--card) 92%, transparent)}
-    .lb-info{padding:14px; overflow:auto; min-height:0; -webkit-overflow-scrolling:touch}
-    .lb-links{display:flex; gap:8px; flex-wrap:wrap; margin-top:10px}
-    /* Make long text show line breaks + wrap nicely */
-    #lb-desc{white-space:pre-wrap; word-wrap:break-word; overflow-wrap:anywhere}
 
     /* subtle 3D tilt */
     .tilt{transform-style:preserve-3d; transition: transform .18s ease}
     .tilt:hover{transform:rotateX(6deg) rotateY(-6deg)}
 
-    /* === Floating GitHub FAB + Quick Dock === */
+    /* ===== Video ===== */
+    .video-grid{display:grid; gap:18px; grid-template-columns:repeat(3,1fr)}
+    @media (max-width: 980px){ .video-grid{grid-template-columns:repeat(2,1fr)} }
+    @media (max-width: 640px){ .video-grid{grid-template-columns:1fr} }
+    .video-card{border-radius:16px; overflow:hidden; border:1px solid var(--border); background:linear-gradient(180deg, color-mix(in oklab, var(--card) 92%, transparent), transparent)}
+    .video-card header{padding:12px 14px; display:flex; align-items:center; justify-content:space-between}
+    .video-card .label{font-weight:700}
+    .video-card video, .video-card iframe{width:100%; height:254px; display:block}
+
+    /* Footer */
+    footer{padding:40px 0; border-top:1px solid var(--border); background: color-mix(in oklab, var(--card) 88%, transparent)}
     .fab{
       position:fixed; right:16px; bottom:16px; z-index:80; display:grid; place-items:center;
       width:56px; height:56px; border-radius:50%;
-      border:1px solid color-mix(in oklab, var(--ink) 18%, transparent);
+      border:1px solid var(--border);
       background:linear-gradient(135deg,var(--brand),var(--brand2));
       box-shadow:0 12px 40px color-mix(in oklab, var(--brand) 40%, transparent);
       color:#fff; font-weight:800;
@@ -216,7 +345,7 @@
       position:fixed; left:12px; bottom:12px; z-index:80;
       display:flex; gap:8px; padding:8px; border-radius:16px;
       background: color-mix(in oklab, var(--card) 88%, transparent);
-      border:1px solid color-mix(in oklab, var(--ink) 18%, transparent);
+      border:1px solid var(--border);
       backdrop-filter: blur(8px);
     }
     .dock a{
@@ -226,35 +355,249 @@
       background: linear-gradient(180deg, color-mix(in oklab, var(--card) 85%, transparent), color-mix(in oklab, var(--card) 96%, transparent));
     }
     @media (max-width:480px){
-      .dock a span{display:none} /* icon-only on tiny screens */
+      .dock a span{display:none}
     }
 
-    /* ===== Mobile-friendly lightbox (fix) ===== */
-    /* make images fill slider area too */
-    .slide{display:block; width:100%; height:100%; object-fit:cover}
+    /* ===== NEW LIGHTBOX MODAL WITH SLIDER & FULLSCREEN ===== */
+    .lightbox{
+      position:fixed;
+      inset:0;
+      background:rgba(0,0,0,.6);
+      -webkit-backdrop-filter:blur(8px);
+      backdrop-filter:blur(8px);
+      z-index:200;
+      display:none;
+      align-items:center;
+      justify-content:center;
+      padding:16px;
+    }
+    .lightbox.open{display:flex;}
 
-    @media (max-width: 640px){
-      .lightbox.open{align-items:stretch}
+    .lb-card{
+      width:min(1000px,94vw);
+      max-height:92vh;
+      background:var(--card);
+      color:var(--ink);
+      border:1px solid var(--border);
+      border-radius:18px;
+      box-shadow:0 30px 80px rgba(0,0,0,.8);
+      display:flex;
+      flex-direction:column;
+      overflow:hidden;
+    }
+    @media(max-width:640px){
       .lb-card{
-        width:100vw; height:100dvh;
-        max-height:none; border-radius:0;
+        width:100vw;
+        height:100dvh;
+        max-height:none;
+        border-radius:0;
       }
-      .lb-body{
-        display:flex; flex-direction:column; min-height:0;
+    }
+
+    .lb-head{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:12px 16px;
+      background:rgba(0,0,0,.3);
+      border-bottom:1px solid var(--border);
+      flex-wrap:wrap;
+      row-gap:8px;
+    }
+    .lb-title{
+      font-size:1rem;
+      font-weight:700;
+      line-height:1.3;
+      margin-right:12px;
+    }
+    .lb-close{
+      font:inherit;
+      background:#0000;
+      color:var(--ink);
+      border:1px solid var(--border);
+      border-radius:10px;
+      padding:8px 12px;
+      cursor:pointer;
+      line-height:1.2;
+    }
+
+    .lb-body{
+      flex:1;
+      min-height:0;
+      display:flex;
+      flex-direction:column;
+      background:
+        radial-gradient(circle at 20% 0%,rgba(124,92,255,.12)0%,transparent 60%),
+        radial-gradient(circle at 80% 20%,rgba(25,211,255,.07)0%,transparent 60%);
+    }
+
+    .slider-wrap{
+      position:relative;
+      border-bottom:1px solid var(--border);
+      background:#000;
+      flex:none;
+      width:100%;
+      height:420px;
+      max-height:50vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      overflow:hidden;
+    }
+    @media(max-width:480px){
+      .slider-wrap{
+        height:380px;
+        max-height:48vh;
       }
-      .slider{
-        width:100%;
-        height:58dvh;   /* tweak for your taste: 55–65dvh */
-        aspect-ratio:auto;
-      }
-      .lb-info{
-        flex:1;
-        min-height:0;
-        overflow:auto;
-        -webkit-overflow-scrolling: touch;
-      }
-      .lb-controls{padding:0 10px}
-      .lb-btn{width:44px; height:44px}
+    }
+
+    .slide{
+      position:absolute;
+      inset:0;
+      opacity:0;
+      transition:opacity .3s ease;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      background:#000;
+    }
+    .slide.active{opacity:1;}
+    .slide img{
+      max-width:100%;
+      max-height:100%;
+      object-fit:contain;
+      display:block;
+      background:#000;
+      border-radius:16px;
+    }
+
+    .lb-arrow{
+      position:absolute;
+      top:50%;
+      translate:0 -50%;
+      width:40px;
+      height:40px;
+      border-radius:50%;
+      background:rgba(0,0,0,.4);
+      border:1px solid var(--border);
+      color:var(--ink);
+      display:grid;
+      place-items:center;
+      font-size:18px;
+      line-height:1;
+      cursor:pointer;
+      user-select:none;
+    }
+    .lb-arrow.left{left:10px;}
+    .lb-arrow.right{right:10px;}
+
+    .fullscreen-btn{
+      position:absolute;
+      bottom:10px;
+      right:10px;
+      background:rgba(0,0,0,.5);
+      border:1px solid var(--border);
+      color:var(--ink);
+      border-radius:10px;
+      padding:8px 10px;
+      font-size:.8rem;
+      line-height:1;
+      font-weight:600;
+      cursor:pointer;
+      user-select:none;
+    }
+
+    .desc-scroll{
+      flex:1;
+      min-height:0;
+      overflow-y:auto;
+      -webkit-overflow-scrolling:touch;
+      padding:16px;
+      display:flex;
+      flex-direction:column;
+    }
+    #lb-desc{
+      white-space:pre-wrap;
+      word-wrap:break-word;
+      overflow-wrap:anywhere;
+      color:var(--muted);
+      font-size:.9rem;
+      line-height:1.5;
+    }
+    .lb-links{
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+      margin-top:16px;
+    }
+    .link-btn{
+      background:linear-gradient(135deg,var(--brand),var(--brand2));
+      border:none;
+      border-radius:12px;
+      color:#fff;
+      font-weight:600;
+      font-size:.85rem;
+      line-height:1.2;
+      padding:10px 14px;
+      text-decoration:none;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+    }
+
+    .lb-foot{
+      flex:none;
+      padding:10px 16px;
+      font-size:.75rem;
+      line-height:1.4;
+      color:var(--muted);
+      border-top:1px solid var(--border);
+      background:rgba(0,0,0,.3);
+      text-align:center;
+    }
+
+    /* fullscreen image viewer */
+    .fs-viewer{
+      position:fixed;
+      inset:0;
+      z-index:300;
+      background:#000;
+      display:none;
+      align-items:center;
+      justify-content:center;
+    }
+    .fs-viewer.open{display:flex;}
+    .fs-img-wrap{
+      width:100%;
+      height:100%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      background:#000;
+    }
+    .fs-img-wrap img{
+      max-width:100%;
+      max-height:100%;
+      object-fit:contain;
+      background:#000;
+    }
+    .fs-close{
+      position:absolute;
+      top:16px;
+      right:16px;
+      background:rgba(0,0,0,.5);
+      border:1px solid var(--border);
+      border-radius:10px;
+      padding:10px 12px;
+      color:#fff;
+      font-weight:600;
+      font-size:.85rem;
+      cursor:pointer;
+      line-height:1.2;
+    }
+
+    @media (max-width:640px){
+      .lightbox.open{align-items:stretch;justify-content:stretch;padding:0;}
     }
   </style>
 </head>
@@ -292,7 +635,7 @@
         <h1 class="title reveal" data-delay="150">Hi, I’m <span style="background:linear-gradient(135deg,var(--brand),var(--brand2)); -webkit-background-clip:text; background-clip:text; color:transparent">Maduvantha Edirisooriya</span> — Mobile App Developer building fast, beautiful experiences.</h1>
         <p class="subtitle reveal" data-delay="250">Final-year ICT undergraduate with hands-on projects across Flutter, embedded IoT, and decentralized systems. I love shipping modern UI with smooth motion and performance.</p>
         <div class="hero-cta reveal" data-delay="300">
-          <a class="btn primary" href="Maduvantha-Edirisooriya-CV.pdf" download>⬇️ Download CV</a>
+          <a class="btn primary" href="cv/Maduvantha-Edirisooriya-CV.pdf" download>⬇️ Download CV</a>
           <a class="btn" href="https://github.com/samaraEdirisooriya" target="_blank" rel="noreferrer">⭐ GitHub</a>
           <a class="btn" href="https://maduvantha.me/" target="_blank" rel="noreferrer">🌐 Website</a>
         </div>
@@ -309,8 +652,7 @@
             <div class="cards">
               <div class="card">
                 <div class="thumb">
-                  <!-- Your GIF -->
-                  <img src="play.gif" alt="Quiz Game GIF">
+                  <img src="play.gif" alt="Quiz Game App UI Demo">
                 </div>
                 <div style="display:flex; justify-content:space-between; margin-top:8px">
                   <strong>Quiz Game App With Flutter</strong>
@@ -441,13 +783,13 @@
   <section id="projects">
     <div class="container">
       <h2 class="section-title reveal">Featured Projects</h2>
-      <p class="lead reveal">Tap a project to open a full-screen phone slider with details.</p>
+      <p class="lead reveal">Tap a project to open slider → click ⛶ to zoom → scroll for description.</p>
+
       <div class="p-grid">
-        <article class="glass p-card reveal" data-key="movie">
-          <div class="phone tilt" aria-label="Movie App">
-            <div class="notch"></div>
+        <article class="p-card reveal" data-key="movie">
+          <div class="phone tilt" aria-label="Cricket Streaming App">
             <div class="screen">
-              <div class="thumb"><img src="crick.gif" alt="Movie app UI screenshot"></div>
+              <img src="crick.gif" alt="Cricket Streaming App mobile UI preview"/>
             </div>
           </div>
           <div class="p-meta">
@@ -455,118 +797,112 @@
             <div class="p-chip muted">Flutter • Player</div>
           </div>
         </article>
-        <article class="glass p-card reveal" data-key="res">
-          <div class="phone tilt" aria-label="Movie App">
-            <div class="notch"></div>
+
+        <article class="p-card reveal" data-key="res">
+          <div class="phone tilt" aria-label="Blockchain Medical Data Research">
             <div class="screen">
-              <div class="thumb"><img src="ser.png" alt="Research"></div>
+              <img src="ser.png" alt="Hyperledger / Corda research dashboard"/>
             </div>
           </div>
           <div class="p-meta">
-            <div class="p-title">Research On Going</div>
-            <div class="p-chip muted">Hyperledger • cordra • Go </div>
-          </div>
-        </article>
-        <article class="glass p-card reveal" data-key="slt">
-          <div class="phone tilt" aria-label="Movie App">
-            <div class="notch"></div>
-            <div class="screen">
-              <div class="thumb"><img src="slt.png" alt="Research"></div>
-            </div>
-          </div>
-          <div class="p-meta">
-            <div class="p-title">SLT Vehicle Hire Automation System (Ongoing)</div>
-            <div class="p-chip muted">Flutter • Nodejs  • SQL </div>
-          </div>
-        </article>
-          <article class="glass p-card reveal" data-key="tou">
-          <div class="phone tilt" aria-label="Movie App">
-            <div class="notch"></div>
-            <div class="screen">
-              <div class="thumb"><img src="demo.gif" alt="Research"></div>
-            </div>
-          </div>
-          <div class="p-meta">
-            <div class="p-title">🇱🇰 TourSL - Flutter Tourism Guide for Sri Lanka</div>
-            <div class="p-chip muted">Flutter •  </div>
+            <div class="p-title">Blockchain for Medical Records</div>
+            <div class="p-chip muted">Hyperledger • Corda • Go</div>
           </div>
         </article>
 
-        <article class="glass p-card reveal" data-key="mo">
-          <div class="phone tilt" aria-label="ScootRUSL">
-            <div class="notch"></div>
+        <article class="p-card reveal" data-key="slt">
+          <div class="phone tilt" aria-label="SLT Vehicle Hire Automation">
             <div class="screen">
-              <div class="thumb"><img src="mo.gif" alt="Scooter rental app UI screenshot"></div>
+              <img src="slt.png" alt="SLT vehicle automation app view"/>
             </div>
           </div>
-          
           <div class="p-meta">
-            <div class="p-title">Flutter + bunny.net Movie Streaming App</div>
-            <div class="p-chip muted">Flutter • Firebase </div>
+            <div class="p-title">SLT Vehicle Hire Automation</div>
+            <div class="p-chip muted">Flutter • Node.js • SQL</div>
           </div>
         </article>
 
-        <article class="glass p-card reveal" data-key="ep">
-          <div class="phone tilt" aria-label="AI Surveillance">
-            <div class="notch"></div>
+        <article class="p-card reveal" data-key="tou">
+          <div class="phone tilt" aria-label="TourSL">
             <div class="screen">
-              <div class="thumb"><img src="ep1.jpg" alt="AI surveillance app UI screenshot"></div>
+              <img src="demo.gif" alt="TourSL Sri Lanka tourism guide app UI"/>
             </div>
           </div>
           <div class="p-meta">
-            <div class="p-title">AI Surveillance (Indoor/Outdoor)</div>
+            <div class="p-title">🇱🇰 TourSL – Tourism Guide</div>
+            <div class="p-chip muted">Flutter • Maps</div>
+          </div>
+        </article>
+
+        <article class="p-card reveal" data-key="mo">
+          <div class="phone tilt" aria-label="Movie Streaming App">
+            <div class="screen">
+              <img src="mo.gif" alt="Movie streaming app with bunny.net and Firebase"/>
+            </div>
+          </div>
+          <div class="p-meta">
+            <div class="p-title">Movie Streaming App</div>
+            <div class="p-chip muted">Flutter • bunny.net • Firebase</div>
+          </div>
+        </article>
+
+        <article class="p-card reveal" data-key="ep">
+          <div class="phone tilt" aria-label="AI Surveillance Camera">
+            <div class="screen">
+              <img src="ep1.jpg" alt="AI surveillance ESP32-CAM + YOLO interface"/>
+            </div>
+          </div>
+          <div class="p-meta">
+            <div class="p-title">AI Surveillance Camera</div>
             <div class="p-chip muted">YOLO • ESP32-CAM</div>
           </div>
         </article>
-          <article class="glass p-card reveal" data-key="extru">
-          <div class="phone tilt" aria-label="EXTRU 2025">
-            <div class="notch"></div>
+
+        <article class="p-card reveal" data-key="extru">
+          <div class="phone tilt" aria-label="EXTRU 2025 Exhibition Website">
             <div class="screen">
-              <div class="thumb"><img src="ex1.png" alt="Exhibition website UI screenshot"></div>
+              <img src="ex1.png" alt="EXTRU 2025 exhibition landing site screenshot"/>
             </div>
           </div>
           <div class="p-meta">
-            <div class="p-title">EXTRU 2025 Exhibition Website</div>
+            <div class="p-title">EXTRU 2025 Exhibition Site</div>
             <div class="p-chip muted">HTML • GSAP</div>
           </div>
         </article>
 
-        <article class="glass p-card reveal" data-key="scoot">
-          <div class="phone tilt" aria-label="Traceability">
-            <div class="notch"></div>
+        <article class="p-card reveal" data-key="scoot">
+          <div class="phone tilt" aria-label="ScootRUSL scooter rental app">
             <div class="screen">
-              <div class="thumb"><img src="se1.jpg" alt="Traceability UI screenshot"></div>
+              <img src="se1.jpg" alt="ScootRUSL scooter rental IoT control UI"/>
             </div>
           </div>
           <div class="p-meta">
-            <div class="p-title">Second-Year Project: ScootRUSL – University Scooter Rental System</div>
-            <div class="p-chip muted">Flutter • IOT</div>
+            <div class="p-title">ScootRUSL Scooter Rental</div>
+            <div class="p-chip muted">Flutter • IoT</div>
           </div>
         </article>
 
-      <article class="glass p-card reveal" data-key="web">
-          <div class="phone tilt" aria-label="Traceability">
-            <div class="notch"></div>
+        <article class="p-card reveal" data-key="web">
+          <div class="phone tilt" aria-label="Parallax + Dark Mode Website project">
             <div class="screen">
-              <div class="thumb"><img src="web1.gif" alt="First- year project: Project - Interactive UI with Parallax Scrolling & Dark Mode"></div>
+              <img src="web1.gif" alt="Parallax website with dark/light mode demo"/>
             </div>
           </div>
           <div class="p-meta">
-            <div class="p-title">Second-Year Project: ScootRUSL – University Scooter Rental System</div>
-            <div class="p-chip muted">Html • js</div>
+            <div class="p-title">Interactive Parallax Site</div>
+            <div class="p-chip muted">HTML • JS</div>
           </div>
         </article>
 
-        <article class="glass p-card reveal" data-key="covid">
-          <div class="phone tilt" aria-label="COVID-19 C App">
-            <div class="notch"></div>
+        <article class="p-card reveal" data-key="covid">
+          <div class="phone tilt" aria-label="COVID-19 Monitoring System in C">
             <div class="screen">
-              <div class="thumb"><img src="cq.png" alt="C program UI screenshot"></div>
+              <img src="cq.png" alt="C-based hospital monitoring terminal UI"/>
             </div>
           </div>
           <div class="p-meta">
             <div class="p-title">COVID-19 Monitoring (C)</div>
-            <div class="p-chip muted">C • Auth</div>
+            <div class="p-chip muted">C • Auth • ICU Tracking</div>
           </div>
         </article>
       </div>
@@ -582,60 +918,73 @@
         <div class="video-card reveal">
           <header>
             <span class="label">Fot Media</span>
-            <span class="tags"><span class="skilltag">After effects</span><span class="skilltag">premier pro</span></span>
+            <span class="tags"><span class="skilltag">After Effects</span><span class="skilltag">Premiere Pro</span></span>
           </header>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/QkFtJauyU1g?si=XEDYfbCMXdCx_ySA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/QkFtJauyU1g?si=XEDYfbCMXdCx_ySA" title="Cinematic university promo video edit" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
         <div class="video-card reveal">
           <header>
             <span class="label">Fot Media</span>
-            <span class="tags"><span class="skilltag">After effects</span><span class="skilltag">premier pro</span></span>
+            <span class="tags"><span class="skilltag">After Effects</span><span class="skilltag">Premiere Pro</span></span>
           </header>
-         <iframe width="560" height="315" src="https://www.youtube.com/embed/oelzaisLgeE?si=A5HswzgpiHribC3v" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/oelzaisLgeE?si=A5HswzgpiHribC3v" title="Event highlight editing reel" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
         <div class="video-card reveal">
           <header>
             <span class="label">Foreign Client</span>
-            <span class="tags"><span class="skilltag">After effects</span><span class="skilltag">Cap-cut</span></span>
+            <span class="tags"><span class="skilltag">After Effects</span><span class="skilltag">CapCut</span></span>
           </header>
-         <iframe 
-  width="315" 
-  height="560" 
-  src="https://www.youtube.com/embed/njjUwGpfrpE" 
-  title="YouTube Shorts Video" 
-  frameborder="0" 
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-  allowfullscreen>
-</iframe>
+          <iframe 
+            width="315" 
+            height="560" 
+            src="https://www.youtube.com/embed/njjUwGpfrpE" 
+            title="Short-form high-energy promo edit" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+          </iframe>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== Lightbox (slider) ===== -->
+  <!-- ===== Lightbox / Slider / Description ===== -->
   <div id="lightbox" class="lightbox" aria-modal="true" role="dialog" aria-label="Project details">
     <div class="lb-card">
       <div class="lb-head">
-        <strong id="lb-title">Project</strong>
-        <button id="lb-close" class="btn">Close ✕</button>
+        <div class="lb-title" id="lb-title">Project</div>
+        <button id="lb-close" class="lb-close">Close ✕</button>
       </div>
+
       <div class="lb-body">
-        <div class="slider">
-          <img class="slide active" id="lb-img-0" alt="slide"/>
-          <img class="slide" id="lb-img-1" alt="slide"/>
-          <img class="slide" id="lb-img-2" alt="slide"/>
-          <div class="lb-controls">
-            <button class="lb-btn" id="lb-prev" aria-label="Previous">◀</button>
-            <button class="lb-btn" id="lb-next" aria-label="Next">▶</button>
-          </div>
+        <!-- slider with arrows + fullscreen -->
+        <div class="slider-wrap">
+          <div class="slide" id="slide-0"><img alt="slide 1"></div>
+          <div class="slide" id="slide-1"><img alt="slide 2"></div>
+          <div class="slide" id="slide-2"><img alt="slide 3"></div>
+
+          <div class="lb-arrow left" id="lb-prev">◀</div>
+          <div class="lb-arrow right" id="lb-next">▶</div>
+
+          <div class="fullscreen-btn" id="fs-btn">⛶ Fullscreen</div>
         </div>
-        <div class="lb-info">
-          <div id="lb-desc" class="muted"></div>
+
+        <div class="desc-scroll">
+          <div id="lb-desc"></div>
           <div class="lb-links" id="lb-links"></div>
         </div>
       </div>
-      <div style="padding:10px 14px; border-top:1px solid color-mix(in oklab, var(--ink) 16%, transparent)" class="muted">Tip: swipe on mobile • use ◀ ▶ keys on desktop</div>
+
+      <div class="lb-foot">Swipe / tap arrows to navigate screenshots • Tap ⛶ to view full image. ESC closes.</div>
     </div>
+  </div>
+
+  <!-- ===== Fullscreen image viewer ===== -->
+  <div id="fs-viewer" class="fs-viewer" aria-label="Fullscreen image">
+    <div class="fs-img-wrap">
+      <img id="fs-img" alt="Fullscreen project screenshot"/>
+    </div>
+    <button class="fs-close" id="fs-close">Close ✕</button>
   </div>
 
   <!-- ===== Contact ===== -->
@@ -663,7 +1012,7 @@
           <li>Open to internships & freelance work</li>
         </ul>
         <div class="hero-cta" style="margin-top:14px">
-          <a class="btn" href="Maduvantha-Edirisooriya-CV.pdf" download>⬇️ Download PDF</a>
+          <a class="btn" href="cv/Maduvantha-Edirisooriya-CV.pdf" download>⬇️ Download PDF</a>
           <a class="btn" href="#projects">Browse Projects</a>
         </div>
       </div>
@@ -678,20 +1027,20 @@
   </footer>
 
   <!-- Floating GitHub FAB -->
-  <a class="fab" href="https://github.com/samaraEdirisooriya" target="_blank" rel="noreferrer" aria-label="Open GitHub">
+  <a class="fab" href="https://github.com/samaraEdirisooriya" target="_blank" rel="noreferrer" aria-label="Open GitHub profile">
     <span>GH</span>
   </a>
 
   <!-- Quick Nav Dock -->
   <nav class="dock" aria-label="Quick navigation">
-    <a href="#top" title="Top">🔝 <span>Top</span></a>
-    <a href="#projects" title="Projects">📱 <span>Projects</span></a>
-    <a href="#videos" title="Videos">🎬 <span>Videos</span></a>
-    <a href="#contact" title="Contact">✉️ <span>Contact</span></a>
+    <a href="#top" title="Back to top">🔝 <span>Top</span></a>
+    <a href="#projects" title="View projects">📱 <span>Projects</span></a>
+    <a href="#videos" title="Watch edits">🎬 <span>Videos</span></a>
+    <a href="#contact" title="Contact me">✉️ <span>Contact</span></a>
   </nav>
 
   <script>
-    // ===== Theme (default DARK) =====
+    // ===== Theme =====
     const root = document.documentElement;
     const themeToggle = document.getElementById('theme-toggle');
     const themeIco = document.getElementById('theme-ico');
@@ -744,7 +1093,7 @@
     // Footer year
     document.getElementById('year').textContent = new Date().getFullYear();
 
-    // ===== Projects data & Lightbox =====
+    // ===== PROJECT DATA =====
     const PROJECTS = {
       movie:{
         title:'Cricket Streaming App',
@@ -775,183 +1124,294 @@ Use the API only with streams you have legal rights to. We do not provide TV rig
       },
       res:{
         title:'Evaluating Blockchain Technologies for Medical Data Management ',
-        desc:'Researched blockchain technologies (Hyperledger Fabric, Ethereum, Corda) for secure medical data management, developing an evaluation framework for security, scalability, interoperability, and compliance while implementing test networks and smart contracts.',
+        desc:`Researched blockchain technologies (Hyperledger Fabric, Ethereum, Corda) for secure medical data management.
+• Designed evaluation framework (security, scalability, compliance)
+• Built test networks
+• Wrote + deployed sample smart contracts for medical records storage / access`,
         images:['ser.png','hy1.png','re2.png','re3.png' ],
-        links:[{label:'Hyperledger', url:'file:///C:/Users/samar/Music/myhlf/index.html'}, {label:'Corda', url:'https://samaraedirisooriya.github.io/Corda-Blockchain-Helth-recode-Storage/'}]
+        links:[
+          {label:'Hyperledger Demo', url:'file:///C:/Users/samar/Music/myhlf/index.html'},
+          {label:'Corda PoC', url:'https://samaraedirisooriya.github.io/Corda-Blockchain-Helth-recode-Storage/'}
+        ]
       },
-       slt:{
+      slt:{
         title:'SLT Vehicle Hire Automation System (Ongoing)',
-        desc:`A large-scale enterprise system developed for Sri Lanka Telecom (SLT) to automate vehicle hire operations. Includes 25+ backend APIs for multi-role user management, cost center operations, attendance tracking, and a dynamic rate card engine with fuel logic.
-Currently in the final authentication and hosting stage, integrating into SLT’s production environment.
-`,
+        desc:`A large-scale enterprise system for Sri Lanka Telecom (SLT) to automate vehicle hire operations.
+
+• 25+ backend APIs
+• Multi-role login (admin / driver / cost center)
+• Cost center reports & analytics
+• Dynamic fuel logic / overtime / absence handling
+• Flutter frontend + Node.js + SQL backend
+• Currently being integrated into SLT infra`,
         images:['slt.png','slt1.png','slt2.png','slt3.png' ],
         links:[]
       },
       tou:{
         title:'🇱🇰 TourSL - Flutter Tourism Guide for Sri Lanka',
-        desc:`A beautiful and modern Flutter mobile app that helps users explore tourist destinations across Sri Lanka. Features an onboarding flow, interactive district map using GeoJSON, and detailed pages for tourist cities with images and descriptions.
-        ✨ Features
-🧭 Onboarding screens shown only once using SharedPreferences
-🗺️ District selection with interactive GeoJSON-based map (flutter_map)
-🏙️ City cards with images and descriptions
-🔍 Navigate from district → cities → city detail
-🎨 Custom UI with gradient overlays and reusable widgets
-⚙️ BLoC-based state management for map and onboarding logic
-`,
+        desc:`A beautiful and modern Flutter mobile app that helps users explore destinations across Sri Lanka.
+
+✨ Features:
+🧭 Onboarding screens (stored with SharedPreferences)
+🗺️ Interactive district map using GeoJSON + flutter_map
+🏙️ City cards with photos & descriptions
+🔍 Drilldown: district → cities → city detail
+🎨 Gradient overlays, glass cards
+⚙️ BLoC-based state logic`,
         images:['demo.gif','t1.png','t2.png','t3.png' ],
         links:[]
       },
-       mo:{
+      mo:{
         title:'Flutter + bunny.net Movie Streaming App',
-        desc:`Overview
-This is a Flutter-based movie streaming app that allows users to stream movies and TV episodes seamlessly. The app features quality selection, a YouTube mini player, integration with Bunny.net streaming service, episode display, and filtering options to enhance user experience.
+        desc:`Cross-platform streaming app.
 
-Features
-🎥 Quality Change: Users can switch between different video qualities while streaming content.
-🎬 YouTube Mini Player: A custom YouTube-inspired mini player that allows users to continue watching while browsing other parts of the app.
-🌐 Bunny.net Streaming Service: Integration with Bunny.net for fast, high-quality video streaming.
-📺 Episode Display: Display a list of episodes for series and shows with a clean UI.
-🔍 Filter Content: Filter movies and TV shows by genre, release date, or other criteria.
-`,
+• Bunny.net CDN streaming
+• Quality selector
+• YouTube-style mini-player
+• Episode lists
+• Category + filter views
+• Firebase + analytics
+• Flutter UI tuned for watch experience`,
         images:['mo.gif','mo1.jpg'],
-        links:[ {label:'github', url:'https://github.com/samaraEdirisooriya/Movie-Streeming-App'} ]
+        links:[ {label:'GitHub', url:'https://github.com/samaraEdirisooriya/Movie-Streeming-App'} ]
       },
       ep:{
-        title:'Third-Year Project: Intelligent Indoor/Outdoor Surveillance Camera with AI Detection and Programmable Relay Control ',
-        desc:`The system architecture is based on the integration of hardware and software components to ensure seamless real-time surveillance.
-🔹 Key Components
-📷 ESP32-CAM Module – A low-power microcontroller with an integrated 2MP camera for video capture.
-🧠 YOLOv8 Object Detection Model – Embedded AI model for real-time object detection and classification.
-☁️ Cloud Server – Manages storage, live streaming, and access control.
-📱 Mobile Application (Flutter) – Provides user access to live feeds, controls, and security alerts.
-⚡ Relay Module – Controls external devices like lights or alarms based on AI detection or user input.
-`,
+        title:'AI Surveillance Camera (Indoor/Outdoor)',
+        desc:`Intelligent surveillance using ESP32-CAM + YOLO.
+
+🔹 ESP32-CAM: live feed capture
+🔹 YOLO model: real-time detection
+🔹 Relay control module: trigger lights/alarms
+🔹 Cloud backend: storage + auth
+🔹 Flutter app: live view, alerts, control
+
+Goal: Smart low-cost security with edge AI.`,
         images:['ep1.jpg','ep2.png','ep3.png'],
         links:[{label:'GitHub', url:'https://github.com/samaraEdirisooriya/Mobile-App-for-Rusl-Ai-cam'}]
       },
-        extru:{
+      extru:{
         title:'EXTRU 2025 Exhibition Website',
-        desc:` Faculty of Technology - Rajarata University of Sri Lanka
-🚀 EXTRU 2025 Invention Exhibition
-Welcome to the official GitHub repository for the EXTRU 2025 Invention Exhibition, the premier innovation event hosted at the new Faculty of Technology building! This website serves as the central hub for showcasing groundbreaking inventions, project demonstrations, and emerging technologies developed by students and researchers.
+        desc:`Faculty of Technology - Rajarata University of Sri Lanka.
 
-🌐 Website: extru.edu.lk
+EXTRU 2025 is an innovation & research exhibition.
+The site:
+• Announces event + schedule
+• Highlights projects & inventions
+• Showcases research areas
+• Mobile-first + animated UI with GSAP
 
-📌 Project Overview
-This repository contains the source code for the EXTRU 2025 responsive and interactive exhibition website. The platform provides information on:
-
-🔹 Event details, schedule, and venue
-🔹 Featured projects & innovations
-🔹 Research and technology highlights
-🔹 Interactive project showcase
-🔹 Live updates and announcements`,
+Built as the official landing / promo presence.`,
         images:['ex1.png','ex2.png','ex3.png','ex4.png'],
-        links:[{label:'Web', url:'https://samaraedirisooriya.github.io/Extrue-2025-website-/'}]
+        links:[{label:'Live Demo', url:'https://samaraedirisooriya.github.io/Extrue-2025-website-/'}]
       },
       scoot:{
-        title:'Second-Year Project: ScootRUSL – University Scooter Rental System',
-        desc:`🛴 ScootRUSL - Scooter Management System
-Introduction
-ScootRUSL is a smart scooter management system designed for students of Rajarata University of Sri Lanka. The system aims to solve the problem of low student participation in sports, lectures, and extracurricular activities due to the distance between hostels and university premises.
+        title:'ScootRUSL – University Scooter Rental System',
+        desc:`ScootRUSL lets university students rent kick scooters to move between hostel and faculty faster.
 
-With ScootRUSL, students can hire and reserve kick scooters easily using a mobile application, reducing travel time and improving overall convenience. 🚀Functional Requirements
-User Registration & Login - Secure student authentication using student ID 🔑
-Scooter Rental & Reservation - Booking and unlocking via the app 🛴
-Scooter Tracking - Real-time GPS tracking 📍
-Maintenance Tracking - Automated issue reporting 🛠️
-Reporting - Usage analytics and insights for administrators 📊
-User Management - Admin control over user access and permissions 🧑‍💼`,
+Core:
+🛴 Scooter reservation / unlock
+📍 GPS tracking
+🛠 Maintenance reporting
+📊 Usage analytics for admins
+🔐 Student login
+
+Stack:
+• Flutter mobile client
+• IoT hardware integration
+• Realtime tracking`,
         images:['se1.jpg','se2.jpg','se3.jpg'],
         links:[{label:'GitHub', url:'https://github.com/samaraEdirisooriya/Scoot-RUSL--Scooter-Management-System-'}]
       },
       web:{
-        title:'First- year project: Project - Interactive UI with Parallax Scrolling & Dark Mode',
-        desc: `🚀 University Project - Interactive UI with Parallax Scrolling & Dark Mode
-🎓 Rajarata University of Sri Lanka
-📄 View Full Project Proposal Here
+        title:'Interactive Parallax / Dark Mode Site (Year 1 Project)',
+        desc:`Front-end UI project from first year (RUSL).
 
-📌 About the Project
-This project showcases my front-end development skills, including:
+• Parallax scrolling
+• Dark / Light toggle
+• Animated sections
+• Login/auth screen mock
+• Fully responsive
 
-🌄 Parallax Scrolling for a smooth scrolling effect
-🌞🌙 Dark Mode & Light Mode Toggle (Click the sun icon to switch)
-🔑 Login System for authentication`,
+Focus: Aesthetic, motion, landing-page feeling.`,
         images:['web1.gif','web2.gif'],
-        links:[{label:'web', url:'https://samaraedirisooriya.github.io/RUSL-Kitchen-Resturent-Website-/public/index.html'}]
+        links:[{label:'Site Demo', url:'https://samaraedirisooriya.github.io/RUSL-Kitchen-Resturent-Website-/public/index.html'}]
       },
-    
       covid:{
-        title:'COVID-19 Monitoring (C)',
-        desc:`COVID-19 Monitoring System 🏥🦠
-Overview
-This COVID-19 Monitoring System is a C-based mini project designed to enhance communication between patients, doctors, nurses, and emergency services. Built using file handling techniques, it ensures secure access to patient data, automates resource tracking, and improves hospital efficiency during emergencies.
+        title:'COVID-19 Monitoring System (C)',
+        desc:`Console/terminal style hospital support tool.
 
-🔑 Features
-✅ Secure User Authentication – Doctors and nurses can create accounts with unique IDs and passwords for secure access.
-✅ Patient Profile Management – Stores patient details, health conditions, prescriptions, and medical notes.
-✅ Automated Resource Tracking – Monitors ICU beds, oxygen levels (O₂), and ambulance availability using file handling.
-✅ Doctor’s ICU Admission System – Doctors can admit patients to the ICU and update treatment plans.
+• Secure login for doctors/nurses
+• Patient file management
+• ICU bed tracking
+• O₂ + ambulance availability
+• Doctor ICU admit flow
+• All done with C file handling (no DB)
 
-`,
+Goal: assist triage + resource tracking during pressure situations.`,
         images:['cq.png','c2.png','c3.png'],
         links:[{label:'GitHub', url:'https://github.com/samaraEdirisooriya/Covid19-Management-System-c'}]
       }
     };
 
-    const lb = document.getElementById('lightbox');
-    const lbTitle = document.getElementById('lb-title');
-    const lbDesc = document.getElementById('lb-desc');
-    const lbLinks = document.getElementById('lb-links');
-    const lbImgs = [0,1,2].map(i=>document.getElementById('lb-img-'+i));
-    let cur = 0; let curImgs = [];
+    // ===== LIGHTBOX / SLIDER LOGIC =====
+    const lightbox   = document.getElementById('lightbox');
+    const lbTitle    = document.getElementById('lb-title');
+    const lbDesc     = document.getElementById('lb-desc');
+    const lbLinks    = document.getElementById('lb-links');
+    const lbClose    = document.getElementById('lb-close');
 
-    function show(i){
-      cur = (i+curImgs.length)%curImgs.length;
-      lbImgs.forEach((img,idx)=>{ img.classList.toggle('active', idx===0); });
-      lbImgs[0].src = curImgs[cur] || '';
-      lbImgs[1].src = curImgs[(cur+1)%curImgs.length] || '';
-      lbImgs[2].src = curImgs[(cur+2)%curImgs.length] || '';
+    const slideWraps = [
+      document.getElementById('slide-0'),
+      document.getElementById('slide-1'),
+      document.getElementById('slide-2')
+    ];
+    const slideImgs = slideWraps.map(w=>w.querySelector('img'));
+
+    const prevBtn    = document.getElementById('lb-prev');
+    const nextBtn    = document.getElementById('lb-next');
+    const fsBtn      = document.getElementById('fs-btn');
+
+    const fsViewer   = document.getElementById('fs-viewer');
+    const fsImg      = document.getElementById('fs-img');
+    const fsClose    = document.getElementById('fs-close');
+
+    let curProject = null;
+    let curImages = [];
+    let curIndex = 0;
+
+    function updateSlider(){
+      if(!curImages.length){
+        curImages = ['placeholder.jpg'];
+      }
+
+      const img0 = curImages[curIndex % curImages.length];
+      const img1 = curImages[(curIndex+1) % curImages.length];
+      const img2 = curImages[(curIndex+2) % curImages.length];
+
+      slideImgs[0].src = img0;
+      slideImgs[1].src = img1;
+      slideImgs[2].src = img2;
+
+      slideWraps.forEach((wrap,idx)=>{
+        wrap.classList.toggle('active', idx===0);
+      });
     }
 
-    function openBox(key){
-      const p = PROJECTS[key]; if(!p) return;
-      lbTitle.textContent = p.title;
-      lbDesc.textContent = p.desc; // preserved by CSS pre-wrap
-      lbLinks.innerHTML = '';
-      p.links.forEach(l=>{
-        const a=document.createElement('a');
-        a.className='btn'; a.href=l.url; a.target='_blank'; a.rel='noreferrer';
-        a.textContent=l.label; lbLinks.appendChild(a);
-      });
-      curImgs = p.images.filter(Boolean);
-      if(curImgs.length===0) curImgs=['assets/placeholder-9x16.jpg'];
-      show(0);
-      lb.classList.add('open');
+    function openLightbox(key){
+      const data = PROJECTS[key];
+      if(!data) return;
 
-      // Freeze background scroll while popup is open
+      curProject = data;
+      curImages = data.images || [];
+      curIndex = 0;
+
+      lbTitle.textContent = data.title;
+      lbDesc.textContent  = data.desc;
+
+      lbLinks.innerHTML = '';
+      data.links.forEach(l=>{
+        const a = document.createElement('a');
+        a.href = l.url;
+        a.target = '_blank';
+        a.rel = 'noreferrer';
+        a.className = 'link-btn';
+        a.textContent = l.label;
+        lbLinks.appendChild(a);
+      });
+
+      updateSlider();
+
+      lightbox.classList.add('open');
       document.body.dataset.prevOverflow = document.body.style.overflow || '';
       document.body.style.overflow = 'hidden';
     }
 
-    function closeBox(){
-      lb.classList.remove('open');
-      // Restore background scroll
+    function closeLightbox(){
+      lightbox.classList.remove('open');
+      fsViewer.classList.remove('open');
       document.body.style.overflow = document.body.dataset.prevOverflow || '';
     }
 
-    document.getElementById('lb-close').addEventListener('click', closeBox);
-    document.getElementById('lb-prev').addEventListener('click', ()=>{ show(cur-1); });
-    document.getElementById('lb-next').addEventListener('click', ()=>{ show(cur+1); });
-    lb.addEventListener('click', (e)=>{ if(e.target===lb) closeBox(); });
-    addEventListener('keydown', (e)=>{ if(!lb.classList.contains('open')) return; if(e.key==='Escape') closeBox(); if(e.key==='ArrowLeft') show(cur-1); if(e.key==='ArrowRight') show(cur+1); });
+    document.querySelectorAll('.p-card').forEach(card=>{
+      card.addEventListener('click', ()=>{
+        const key = card.dataset.key;
+        openLightbox(key);
+      });
+    });
 
-    document.querySelectorAll('.p-card').forEach(card=>{ card.addEventListener('click', ()=> openBox(card.dataset.key)); });
+    prevBtn.addEventListener('click', ()=>{
+      if(!curImages.length) return;
+      curIndex = (curIndex - 1 + curImages.length) % curImages.length;
+      updateSlider();
+    });
+    nextBtn.addEventListener('click', ()=>{
+      if(!curImages.length) return;
+      curIndex = (curIndex + 1) % curImages.length;
+      updateSlider();
+    });
 
-    // Basic touch swipe for slider
-    let startX=0; const slider=document.querySelector('.slider');
-    slider.addEventListener('touchstart', e=>{ startX=e.touches[0].clientX; }, {passive:true});
-    slider.addEventListener('touchend', e=>{ const dx=(e.changedTouches[0].clientX - startX); if(Math.abs(dx)>30){ dx>0?show(cur-1):show(cur+1); } }, {passive:true});
+    // swipe left/right on slider
+    let startX = 0;
+    const sliderArea = document.querySelector('.slider-wrap');
+    sliderArea.addEventListener('touchstart', e=>{
+      startX = e.touches[0].clientX;
+    }, {passive:true});
+    sliderArea.addEventListener('touchend', e=>{
+      const dx = e.changedTouches[0].clientX - startX;
+      if(Math.abs(dx)>30){
+        if(dx>0){
+          curIndex = (curIndex - 1 + curImages.length) % curImages.length;
+        }else{
+          curIndex = (curIndex + 1) % curImages.length;
+        }
+        updateSlider();
+      }
+    }, {passive:true});
+
+    // fullscreen image viewer
+    fsBtn.addEventListener('click', ()=>{
+      if(!curImages.length) return;
+      fsImg.src = curImages[curIndex];
+      fsViewer.classList.add('open');
+    });
+
+    fsClose.addEventListener('click', ()=>{
+      fsViewer.classList.remove('open');
+    });
+    fsViewer.addEventListener('click', e=>{
+      if(e.target===fsViewer){
+        fsViewer.classList.remove('open');
+      }
+    });
+
+    // close lightbox
+    lbClose.addEventListener('click', closeLightbox);
+    lightbox.addEventListener('click', (e)=>{
+      if(e.target === lightbox){
+        closeLightbox();
+      }
+    });
+
+    // keyboard shortcuts
+    addEventListener('keydown', (e)=>{
+      if(lightbox.classList.contains('open')){
+        if(e.key==='Escape'){
+          if(fsViewer.classList.contains('open')){
+            fsViewer.classList.remove('open');
+          } else {
+            closeLightbox();
+          }
+        }
+        if(e.key==='ArrowLeft'){
+          curIndex = (curIndex - 1 + curImages.length) % curImages.length;
+          updateSlider();
+        }
+        if(e.key==='ArrowRight'){
+          curIndex = (curIndex + 1) % curImages.length;
+          updateSlider();
+        }
+      }
+    });
   </script>
 </body>
 </html>
-
